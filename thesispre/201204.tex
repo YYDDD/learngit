@@ -1,0 +1,111 @@
+\noindent 令
+\begin{equation}
+\left.\begin{aligned}
+K_{v}&=\frac{K_{Q}i}{A}(\text{开环增益}) \\
+G&=\frac{AK_{Q}i}{K_{c}+C}\text{(刚度系数)} \\
+T&=\frac{V_{t}}{4K(K_{c}+C)}\text{(时间常数)}
+\end{aligned}\right\}
+\end{equation}
+
+\noindent 则系统结构简化成图9-16结构形式。
+
+从图9-16可得，系统对输入信号$X_{\text{r}}(s)$的闭环传递函数为
+\begin{align}
+    \varPhi_{\text{r}}(s)=\frac{X_{\text{cr}}(s)}{X_{\text{r}}(s)}=\frac{K_{v}}{\frac{1}{\omega_{\text{n}}^2}s^3+\frac{2\zeta }{\omega_{\text{n}}}s^2+s+K_{v}}
+\end{align}
+
+\noindent 系统对外负载力$F(s)$(干扰信号)的闭环传递函数为
+\begin{align}
+    \varPhi_{\text{f}}(s)=\frac{X_{\text{cf}}(s)}{F(s)}=\frac{-K_{v}(Ts+1)/G}{\frac{1}{\omega_{\text{n}}^2}s^3+\frac{2\zeta }{\omega_{\text{n}}}s^2+s+K_{v}}
+\end{align}
+
+\noindent 式中$X_{\text{cr}}(s)$和$X_{\text{cf}}(s)$分别为输入信号$X_{\text{r}}(s)$与外载力$F(S)$作用下刀架的输出响应（即刀架的位移）的拉氏变换式。
+
+系统总的输出响应（刀架的位移）的拉氏变换式为
+\begin{align}
+    X_{\text{c}}(s)&=X_{\text{cf}}(s)+X_{\text{cr}}(s) \notag \\
+    &=\frac{K_{v}}{\frac{1}{\omega_{\text{n}}^2}s^3+\frac{2\zeta }{\omega_{\text{n}}}s^2+s+K_{v}}[X_{\text{r}}(s)-\frac{F(s)}{G}(Ts+1)]
+\end{align}
+
+必须指出，在以上的分析计算中,对于仿形销、传动杠杆和滑阀的质量以及由此而引起的惯性力、机械弹性变形；阀芯上的稳态和瞬态液动力以及黏性摩擦力等都认为是很小的而没有考虑，所以在计算中将传动杠杆和滑阀式液压放大器均作为比例环节对待。
+这样的简化处理合乎大多数机液伺服系统的实际情况，但对于某些高速、精密的液压伺服系统，这样简化就过于粗糙，而需要考虑上述因素，进行精确的分析与计算。
+
+\subsection{系统性能分析}
+
+建立了系统的数学模型，即图9-16、式（9-21）和式（9-22）以后，就可以根据数学模型对系统的性能进行全面的分析。
+
+\subsubsection{系统稳定性}
+
+由式（9-21）和式（9-22）可知系统的特征方程式为
+\begin{align}
+    \frac{1}{\omega_{\text{n}}^2}s^3+\frac{2\zeta }{\omega_{\text{n}}}s^2+s+K_{v} \notag
+\end{align}
+
+相应的劳斯表为
+
+\begin{table*}
+\centering
+\renewcommand\arraystretch{1.5}
+\begin{tabular}{p{1cm}<{\centering}|p{2.5cm}<{\centering}p{1cm}<{\centering}}
+    $s^3$   &   $\frac{1}{\omega_{\text{n}}^2}$     &   $1$ \\
+    \hline
+    $s^2$   &   $\frac{2\zeta}{\omega_{\text{n}}}$  &   $K_{v}$\\
+    \hline
+    $s^1$   &   $\frac{\omega_{\text{n}}}{2\zeta}(\frac{2\zeta}{\omega_{\text{n}}}-\frac{K_{v}}{\omega_{\text{n}}^2})$   &   \\
+    \hline
+    $s^0$   &   $K_{v}$                             &            \\
+\end{tabular}
+\end{table*}
+
+由劳斯判据可得保证系统稳定的充分和必要条件是，劳斯表中第一列各元素必须大于零。而$\omega_{\text{n}}$，$\zeta $，$K_{v}$由前面的分析可知均是大于零的，于是得系统稳定的充要条件为
+\begin{align}
+    \frac{\omega_{\text{n}}}{2\zeta }(\frac{2\zeta }{\omega_{\text{n}}}-\frac{K_{v}}{\omega_{\text{n}}^2})>0 \notag
+\end{align}
+
+\noindent 即是
+\begin{align}
+    K_{v}<2\zeta \omega_{\text{n}}
+\end{align}
+
+\noindent 将式（9-19）和式（9-20）带入式（9-24）并整理得
+\begin{align}
+    K_{Q}<\frac{1}{i}\sqrt{\frac{2KA^2}{V_{\text{t}}m}}\Bigg[\frac{B}{2}\sqrt{\frac{V_{\text{t}}}{Km}}+2(K_{c}+C)\sqrt{\frac{Km}{V_{\text{t}}}}\Bigg]
+\end{align}
+
+一旦系统各部分的结构参数确定了，就可以用式（9-25）来校核系统的稳定性。凡满足该式者则是稳定的，反之系统则必不稳定，则各部分的结构参数需要进行调整。所以该式成为检验系统各部分的参数匹配是否恰当的最基本的公式之一。往往根据系统的应用场合和驱动负载的大小将液压缸的基本参数$A$，$m$，$V_{\text{t}}$等确定了，因此该式就是选择液压放大器性能参数$K_{Q}$和$K_{c}$的最基本的公式。
+
+如果略去黏性摩擦和系统的泄漏不计，即$B\approx 0$，$C\approx 0$，则式（9-25）可简化成
+\begin{align}
+    \frac{K_{c}}{K_{Q}}>\frac{iV_{\text{t}}}{4KA}
+\end{align}
+
+式（9-26）大为简化了确定系统主要元件（液压放大器、液压缸、传动杠杆）的主要参数的匹配条件。按式（9-26）计算，由于忽略了对稳定有利的黏性摩擦和泄漏而偏于保守。但是在进行系统动态性能估算或设计新系统的过程中，进行系统参数预选时，这个公式仍然是十分有用的。
+
+\subsubsection{系统的频率特性}
+
+从图9-16可知，系统对输人信号$X_{\text{r}}(s)$的开环传递函数为
+\begin{align}
+    W_{\text{r}}(s)=\frac{K_{v}}{s(\frac{1}{\omega_{\text{n}}^2}s^2+\frac{2\zeta }{\omega_{\text{n}}}s+1)}
+\end{align}
+
+\noindent 则系统的开环对数频率特性曲线（波德图）如图
+9-17所示。为了确保系统稳定并使系统具有良好的过渡过程，必须使系统具有一定的稳定裕量（相角裕量$\gamma $和幅值裕量$h$）。为此，在自然频率$\omega_{\text{n}}$一定的情况下，必须严格控制开环增益$K_{v}$和阻尼比$\zeta $值，图中曲线\textcircled{1}所示系统是稳定的，且具有一定稳定裕量。当阻尼比$\zeta $不变而使开环增益$K_{v}$增加时,
+将会使对数幅频特性曲线向上平移而使系统变为不稳定，如图中曲线\textcircled{2}所示。当开环增益$K_{v}$不变，阻尼比$\zeta $减小也同样使稳定裕量减小，甚至变为不稳定，如图中曲线\textcircled{3}所示。因此使系统具有一定的阻尼比是改善系统动态性能的重要途径。从式（9-19）可知，适当地增加滑阀放大器的流量——压力系数$K_{c}$或液压缸的综合泄漏系数$C$值可以使阻尼比$\zeta $加大。
+从图9-14可知，采用具有一定的正开口的滑阀可使$K_{p}$下降，$K_{c}$加大。也可以采用在执行元件的两腔间跨接一个固定节流器，如图9-18所示，人为地造成一定的泄漏量使$C$值增加。用这两种方法来增加阻尼比固定方便可行，但都造成无功流量的增加而降低了系统的效率，并且从式（9-20）可知，$K_{c}$或$C$值的增加将使刚度系数$G$下降。从以后的分析将知道，刚度系数$G$下降使系统静态误差加大。
+
+还应指出，提高油液的综合体积弹性模量$K$值，不仅可以使阻尼比$\zeta $适当增加，而且尤为重要的是使系统自然频率$\omega_{\text{n}}$提高，从式（9-24）可知，这将改善系统的稳定性。因此，在保证一定的稳定裕量的条件下，可提高开环增益$K_{v}$和系统的快速性，而$K_{v}$的增加又会提高系统的静态精度，减小静态误差。然而空气渗入到系统内部将会使油液综合体积弹性模量$K$值严重下降。
+为此必须采用各种措施严格防止空气的渗入。对于这点，液压伺服系统比一般液压传动系统要求更为严格。此外，液压缸与滑阀之间尽量不要用软管连接，软管弹性变形大，促使$K$值下降。
+
+\subsubsection{系统的静态误差}
+
+液压伺服系统是利用误差信号进行控制的闭环控制系统。因此仿形销的输入运动$x_{\text{r}}(t)$与液压缸（刀架）的输出运动$x_{\text{c}}(t)$之间必然存在误差。从图9-16可知，误差$e(t)$包含两部分：一部分是由输入信号$x_{\text{r}}(t)$所引起的误差$e_{\text{r}}(t)$；另一部分为外负载力（干扰信号）$f(t)$所引起的误差$e_{\text{f}}(t)$。所以系统总的误差为二者的代数和，即
+\begin{align*}
+    e(t)&=e_{\text{r}}(t)+e_{\text{f}}(t)
+\end{align*}
+
+\noindent 或
+\begin{align}
+    E(S)&=E_{\text{r}}(s)+E_{\text{f}}(s)
+\end{align}
+
+\noindent 为了便于计算，我们也可以将图9-16变换成图9-19所示的信号流图，并从节点$E(s)$引出一条单位增益的支路，变$E(s)$为阱点。

@@ -1,0 +1,211 @@
+引入了缓变流动和动能修正系数$\alpha$之后，式（1-27）简化得到如下结果：
+\begin{equation*}
+(z_1+\frac{p_1}{\rho g})\rho gQ_1+\frac{\alpha_1v_1^2}{2g}\rho gQ_1=(z_2+\frac{p_2}{\rho g})\rho gQ_2+\frac{\alpha_2v_2^2}{2g}\rho gQ_2+\int_{A_1-A_2} {h^{'}}_w{\rho} g \mathrm{d}Q
+\end{equation*}
+
+由流量连续方程有$Q_1=Q_2=Q$，并以$\rho gQ$除上式，得到总流上单位重力液体的伯努利方程式
+\begin{equation}
+z_1+\frac{p_1}{\rho g}+\frac{\alpha_1v_1^2}{2g}=z_2+\frac{p_2}{\rho g}+\frac{\alpha_2v_2^2}{2g}+h_w
+\end{equation}
+式中$h_w$表示单位重力液体从截面$A_1$流到截面$A_2$过程中的能量损失,一般通过计算或实验确定,写成
+\begin{equation}
+h_w=\frac{\int_{A_1-A_2} {h^{'}}_w{\rho} g \mathrm{d}Q}{\rho gQ}
+\end{equation}
+$\alpha_1$和$\alpha_2$为动能修正系数。式(1 - 29)仍然是能量守恒的方程式，也是实际工程应用中的伯努利方程。它在液压传动和液力传动中是很重要的一个公式,常与连续方程一起来求解系统中的压力和速度等问题。
+
+\subsubsection*{4.伯努利方程的应用举例}
+
+例1-2\ 计算从容器侧壁小孔喷射出来的射流速度。
+
+如图1-15所示的水箱侧壁开一小孔,水箱自由液面1-1与小孔2-2处的压力分别为$p_1$和$p_2$，小孔中心到水箱自由液面的距离为$h$,且$h$基本不变，如果不计损
+失，求水从小孔流出的速度。
+
+解\ 以小孔中心线为基准，列出1-1和2-2的伯努利方程，即
+\begin{equation*}
+z_1+\frac{p_1}{\rho g}+\frac{\alpha_1v_1^2}{2g}=z_2+\frac{p_2}{\rho g}+\frac{\alpha_2v_2^2}{2g}+h_w
+\end{equation*}
+按给定条件，$z_1=h$，$z_2=0$，$h_w=0$，又因小孔截面积远小于水箱截面积，故$v_1\ll v_2$，令$v_1\approx 0$，设$\alpha_1=\alpha_2=1$,则上式可简化为
+\begin{equation*}
+    h+\frac{p_1}{\rho g}=\frac{p_2}{\rho g}+\frac{v_2^2}{2g}
+\end{equation*}
+则
+\begin{equation*}
+  v_2=\sqrt{2gh+\frac{2g(p_1-p_2)}{\rho g}}\approx \sqrt{\frac{2}{\rho}(p_1-p_2)}
+\end{equation*}
+
+例1-3\ 推导文丘利流量计的流量公式。
+
+解\ 图1-16所示为文丘利流量计，1-1和2-2两通流截面处直径分别为$D_1$和$D_2$，现以管轴心线为基准，且取$\alpha_1=\alpha_2=1$,不计能量损失，列出两截面的伯努利方程，即
+\begin{equation*}
+    \frac{p_1}{\rho g}+\frac{v_1^2}{2g}=\frac{p_2}{\rho g}+\frac{v_2^2}{2g}
+\end{equation*}
+由连续方程
+\begin{equation*}
+  v_1A_1=v_2A_2=Q
+  \end{equation*}
+代入上式并加以整理得
+\begin{equation*}
+  v_1=\sqrt{\frac{2(p_1-p_2)}{\rho(\frac{D_1^4}{D_2^4}-1)}}
+  \end{equation*}
+
+  由静力学方程可推出
+  \begin{equation*}
+   \Delta p=p_1-p_2=h(\rho_{\Lambda g} g-\rho g)=h\rho g(\frac{\rho_{\Lambda g} g}{\rho g}-1)=h\rho g(\frac{\rho_{\Lambda g}}{\rho}-1)
+    \end{equation*}
+\noindent 式中\
+\begin{tabular}[t]{ll}
+$h$ &——\ 测压管高度差；\\
+$\rho_{\Lambda g}$ &——\ 水银的密度；\\
+$\rho$ &——\ 被测液体密度。
+\end{tabular}
+
+通过的流量
+\begin{equation*}
+Q=v_1A_1=\frac{\pi D_1^2}{4}\sqrt{\frac{2gh(\frac{\rho_{\Lambda g}}{\rho}-1)}{\frac{D_1^4}{D_2^4}-1}}
+\end{equation*}
+
+由上式可以看出，文丘利流量计参数确定之后，通过流量计的流量只与测压管汞柱高度差$h$有关，因此可以用测$h$值的办法测流量。
+\subsection*{五、动量方程}
+液流作用在固体壁上的力用动量方程求解。动量定理指出:作用在物体上的力的大小等于物体在力作用方向上动量的变化率，即
+\begin{equation*}
+\sum\boldsymbol F=\frac{\mathrm{d}\boldsymbol N}{\mathrm{d}t}=\frac{\mathrm{d}(\sum m \boldsymbol u)}{\mathrm{d}t}
+\end{equation*}
+
+将动量定理应用到流动液体上可推导出流体的动量方程。在总流中沿流线取一段固定空间，
+如图1-17中的\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}区城,称为控制体。为使问题简化，
+设包围控制体的表面就是通流截面\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1}
+和\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}以及周面，而周面可以是固定壁面或者是由无数流线组成的液面,因此无流体经此周面流入和流出控制体，
+流体只能经通流截面\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1}和\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}流入和流出控制体。
+
+在某时刻$t$，占据控制体的液体所处的空间区城为\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1}至\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}段，经d$t$时间后运动
+到\uppercase\expandafter{\romannumeral1}'-\uppercase\expandafter{\romannumeral1}'至\uppercase\expandafter{\romannumeral2}'-\uppercase\expandafter{\romannumeral2}'位置，
+即有\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1}至\uppercase\expandafter{\romannumeral1}'-\uppercase\expandafter{\romannumeral1}'
+和\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}至\uppercase\expandafter{\romannumeral2}'-\uppercase\expandafter{\romannumeral2}'段流体流入和流出控制体。
+
+分析恒定流动时的情况，公共段\uppercase\expandafter{\romannumeral1}'-\uppercase\expandafter{\romannumeral1}'-\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}
+的形状、位置、质量与速度等参量都不随时间变化，故流体动量不变。控制体内的动量增量只是流出与流入流体的动量差，
+即\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1}至\uppercase\expandafter{\romannumeral1}'-\uppercase\expandafter{\romannumeral1}'
+和\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}至\uppercase\expandafter{\romannumeral2}'-\uppercase\expandafter{\romannumeral2}'段流体的动量之差。
+
+任取一股微小流束如图1-17所示。该微小流束在\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1}和\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}
+两截面上的微元面积分别为$\mathrm{d}A_1$和$\mathrm{d}A_2$；流速为$\boldsymbol {u_1}$和$\boldsymbol {u_2}$，
+微小流量为$\mathrm{d}Q_1$和$\mathrm{d}Q_2$，
+总流的流量为$Q_1$和$Q_2$；两截面面积为$A_1$和$A_2$。
+则微小流束\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1'}段和\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}'段的动量
+\begin{equation*}
+  m_1\boldsymbol{u_1}=\rho_1\boldsymbol{u_1}u_1\mathrm{d}A_1\mathrm{d}t=\rho_1\boldsymbol{u_1}\mathrm{d}t\mathrm{d}Q_1
+\end{equation*}
+\begin{equation*}
+  m_2\boldsymbol{u_2}=\rho_2\boldsymbol{u_2}u_2\mathrm{d}A_2\mathrm{d}t=\rho_2\boldsymbol{u_2}\mathrm{d}t\mathrm{d}Q_2
+\end{equation*}
+流入、流出控制体的流体
+\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1}至\uppercase\expandafter{\romannumeral1}'-\uppercase\expandafter{\romannumeral1}'段
+和\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}至\uppercase\expandafter{\romannumeral2}'-\uppercase\expandafter{\romannumeral2}'段的总动量
+\begin{equation*}
+  \sum{m_1\boldsymbol{u_1}}=\sum\rho_1\boldsymbol{u_1}u_1\mathrm{d}A_1\mathrm{d}t=[\int_{A_1}\rho_1\boldsymbol{u_1}u_1\mathrm{d}A_1]\mathrm{d}t=[\int_{Q_1}\rho_1\boldsymbol{u_1}\mathrm{d}Q_1]\mathrm{d}t
+\end{equation*}
+
+\begin{equation*}
+  \sum{m_2\boldsymbol{u_2}}=\sum\rho_2\boldsymbol{u_2}u_2\mathrm{d}A_2\mathrm{d}t=[\int_{A_2}\rho_2\boldsymbol{u_2}u_2\mathrm{d}A_2]\mathrm{d}t=[\int_{Q_2}\rho_2\boldsymbol{u_2}\mathrm{d}Q_2]\mathrm{d}t
+\end{equation*}
+
+控制体内动量的增量就是
+\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1}至\uppercase\expandafter{\romannumeral1}'-\uppercase\expandafter{\romannumeral1}'段
+和\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}至\uppercase\expandafter{\romannumeral2}'-\uppercase\expandafter{\romannumeral2}'段
+流体的动量差.即
+\begin{equation*}
+  \mathrm{d}N_C=[\int_{Q_2}\rho_2\boldsymbol{u_2}\mathrm{d}Q_2-\int_{Q_1}\rho_1\boldsymbol{u_1}\mathrm{d}Q_1]\mathrm{d}t
+\end{equation*} 
+则作用在流体上的外力合力
+\begin{equation}
+\sum \boldsymbol F=\frac{\mathrm{d}N_C}{\mathrm{d}t}=\int_{Q_2}\rho_2\boldsymbol{u_2}\mathrm{d}Q_2-\int_{Q_1}\rho_1\boldsymbol{u_1}\mathrm{d}Q_1
+\end{equation} 
+
+通流截面\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1}
+和\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}
+上各点流速$\boldsymbol{u_1}$和$\boldsymbol{u_2}$的分布一般难以确定，现用两通流截面上的平均流速$\boldsymbol{v_1}$和$\boldsymbol{v_2}$乘以动量修正系数$\beta_1$和$\beta_2$来代替$\boldsymbol{u_1}$和$\boldsymbol{u_2}$，则式(1-31)改写成
+\begin{equation}
+  \sum \boldsymbol F=\int_{Q_2}\rho_2\beta_2\boldsymbol{v_2}\mathrm{d}Q_2-\int_{Q_1}\rho_1\beta_1\boldsymbol{v_1}\mathrm{d}Q_1=\rho_2\beta_2\boldsymbol{v_2}Q_2-\rho_1\beta_1\boldsymbol{v_1}Q_1
+  \end{equation} 
+
+对于不可压缩流体，则有$Q_1=Q_2=Q,\rho_1=\rho_2=\rho$,于是式(1-32)可以改写成
+\begin{equation}
+  \sum \boldsymbol F=\rho Q(\beta_2\boldsymbol{v_2}-\beta_1\boldsymbol{v_1})
+  \end{equation} 
+
+  一般在计算时，为方便常写成投影形式，如求在$x$方向的分量
+  \begin{equation}
+    \sum F_x=\rho Q(\beta_2 v_{2x}-\beta_1 v_{1x})
+    \end{equation} 
+
+    式(1-33b)就是液体作恒定流动时的动量方程，从中看出，作用在控制体上外力合力的大小仅与流出、流入控制面的流速和流量有关，与控制体内部流体的运动参数无关。无论所选取的控制体的形状、尺寸及位置如何，这个结论都是适用的。    
+
+    公式中$\beta_1$和$\beta_2$是动量修正系数，它是实际动量与采用平均流速计算的动量之比，即 
+    \begin{equation}
+     \beta=\frac{\int_A u^2\mathrm{d}A}{v^2A}
+      \end{equation} 
+ 可以推出$\beta$也是大于1的数。工程上常取$\beta$为1$\sim$1.33，素流时取$\beta=1$，层流时取$\beta$=1.33。
+
+ 对于非恒定流动，由于控制体内各点的参数均随时间变化，因此在$\mathrm{d}t$时间内，控制体内的动量增量就不仅仅是流出、流入控制体的动量差，且还要加上控制体内部的动量增量，即
+ \begin{equation*}
+  \begin{aligned}
+  \mathrm{d}\boldsymbol{N_C}=&\mathrm{d}(\sum\rho \boldsymbol{u_C} \mathrm{d}V)+(\sum{m_2\boldsymbol{u_2}}-\sum{m_1\boldsymbol{u_1}})=\\
+  &\mathrm{d}[\int_{CV}\rho {\boldsymbol u}_C \mathrm{d}V]+[\int_{Q_2}\rho_2\boldsymbol{u_2}\mathrm{d}Q_2-\int_{Q_1}\rho_1\boldsymbol{u_1}\mathrm{d}Q_1]\mathrm{d}t
+\end{aligned}  
+\end{equation*} 
+\noindent 式中\
+\begin{tabular}[t]{ll}
+$\mathrm{d}V$&——\ 控制体内任取的流体的微元体；\\
+$\boldsymbol{u_C}$&——\ 微元体$\mathrm{d}V$的速度；\\
+$CV$&——\ 控制体体积。
+\end{tabular}
+
+其余参数含义同前。
+
+则此时的作用力
+\begin{equation*}
+  \sum\boldsymbol F=\frac{\mathrm{d}\boldsymbol{N_C}}{\mathrm{d}t}=\frac{\mathrm{d}}{\mathrm{d}t}[\int_{CV}\rho {\boldsymbol u}_C \mathrm{d}V]+(\rho_2\beta_2\boldsymbol v_2 Q_2-\rho_1\beta_1\boldsymbol v_1 Q_1)
+\end{equation*}
+对于不可压缩的液体，则有
+\begin{equation}
+\sum\boldsymbol F=\frac{\mathrm{d}}{\mathrm{d}t}[\int_{CV}\rho {\boldsymbol u}_C \mathrm{d}V]+\rho Q(\beta_2\boldsymbol v_2-\beta_1\boldsymbol v_1)
+\end{equation}
+在$x$方向投影为
+\begin{equation}
+\begin{aligned}
+  \sum F_x=[\frac{\mathrm{d}}{\mathrm{d}t}&\int_{CV}\rho {\boldsymbol u}_C \mathrm{d}V]_x+\rho Q(\beta_2 v_{2x}-\beta_1v_{1x})\\
+  &\text{瞬态液动力}\ \ \ \ \ \ \ \ \qquad  \text{稳态液动力}
+\end{aligned}
+\end{equation}
+
+由式(1-36)可见，当液体作非恒定流动时，作用在控制体上的力由两部分组成:一部分是由于流体流入流出的动量变化引起的(式中第二项)，称为稳态液动力。另一部分则是由于流体作非恒定流动时，在控制体内流体产生加速度运动而引起的(式中第一项),称为瞬态液动力。
+
+必须注意，液体对壁面作用力的大小和$F$相同,但方向相反。
+
+对于直管或缓变流动的情况，可以用如下公式来求瞬态液动力(见图1-18):
+\begin{equation*}
+ F_a=\frac{\mathrm{d}}{\mathrm{d}t}[\int_{CV}\rho {\boldsymbol u} \mathrm{d}V]=\frac{\mathrm{d}}{\mathrm{d}t}[\int_{CV}\rho {\boldsymbol u} \mathrm{d}s\mathrm{d}A]
+ =\rho\frac{\mathrm{d}}{\mathrm{d}t}[\int_{s_1}^{s_2}\mathrm{d}s\int_A\boldsymbol u\mathrm{d}A]=(s_2-s_1)\rho\frac{\mathrm{d}Q}{\mathrm{d}t}
+\end{equation*}
+或
+\begin{equation}
+  F_a=l\rho\frac{\mathrm{d}Q}{\mathrm{d}t},\ \ \ \ l=s_2-s_1
+\end{equation}
+\noindent 式中\
+\begin{tabular}[t]{ll}
+\qquad$l$ &——\ 通常称为阻尼长度；\\
+$s_2,s_1$ &——\ 沿流向取的液流段坐标值。
+\end{tabular}
+
+其他参数含义同前。
+
+下面以液压传动中常用的滑阀为例，加深理解动量方程。
+
+很多液压阀都是滑阀结构，这些滑阀靠阀芯的移动来改变阀口的大小或启闭，从而控制了液流。
+液流通过阀口时，阀芯所产生的液动力，将对这些液压阀的性能有很大影响。
+
+由前面分析可知，作用在阀芯上的液动力有稳态液动力和瞬态液动力两种。
+
+\subsubsection*{1.稳态液动力(或稳态轴向液动力)}
+
+稳态液动力是阀芯移动完毕，开口固定以后，液流流过阀口时因动量变化而作用在阀芯上的力。图1-19给出液流流过阀口的两种情况。取阀芯两凸肩间的容腔中液体作为控制体，由
