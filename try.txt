@@ -1,3 +1,4 @@
-我又试了试
-我还想再试一试
-再试最后一次哦
+先把learngit克隆到本地
+然后点进Learangit文件夹 进行修改
+修改好了之后 git add git commit-m"姓名+修改文件名"
+然后git push -u origin main 将分支上传， 会要求登录验证身份  如果已经是协作者 则可以顺利上传
