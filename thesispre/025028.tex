@@ -1,4 +1,5 @@
-（1- 33）可求得液流流入或流出阀腔时的稳态维动力为
+
+\noindent 式（1- 33）可求得液流流入或流出阀腔时的稳态维动力为
 \begin{equation}
 F_\text{s}=\rho Qv\cos \theta
 \end{equation}
@@ -10,15 +11,53 @@ $v$——阀口处的平均流速。
 
 稳态液动力的方向总是指向关闭阀口的方向，相当于一个回复力，使滑阀的工作趋于稳定。
 
+\begin{figure}
+    \centering
+    \ifOpenSource
+    \includegraphics[width=10cm]{cover.jpg}
+    \else
+    \subfloat[]{
+    \label{fig0119_a}
+    \includegraphics{fig0119_a.pdf}
+    }
+    \hspace{10pt}%
+    \subfloat[]{
+    \label{fig0119_b}
+    \includegraphics{fig0119_b.pdf}
+    }
+    \fi
+    \caption{滑阀的稳态液动力}%题注
+    \label{fig:fig0119}
+\end{figure}    
+
 \subsubsection*{瞬态波动力}
 
     瞬态液动力是滑阀在移动过程中(即开口大小发生变化时)阀腔中液流因加速或减速而作用在阀芯上的力。这个力只与阀芯移动速度有关(即与阀口开度的变化率有关)，与阀口开度本身无关。
 
     图1 - 20表示了阀芯移动时出现瞬态液动力的情况。当阀口开度变化时，阀腔内长度为\l 那部分油液的轴向速度亦发生变化，也就出现了加速或减速，于是阀芯上就受到了一个轴向的反作用力$F_{a}$，这就是瞬态液动力。由式（1 - 37a）可知
 \begin{equation*}
-F_\text{a}=\rho l \frac{dQ}{dt}
+F_\text{a}=\rho l \frac{\mathrm{d}Q}{\mathrm{d}t}
 \end{equation*}
-当阀口前后的压差不变或变化不大时，流量的变化率$\frac{dQ}{dt}$与阀口开度的变化率$\frac{dx_{v}}{dt}$成正比。
+当阀口前后的压差不变或变化不大时，流量的变化率$\frac{\mathrm{d}Q}{\mathrm{d}t}$与阀口开度的变化率$\frac{\mathrm{d}x_{v}}{\mathrm{d}t}$成正比。
+
+\begin{figure}
+    \centering
+    \ifOpenSource
+    \includegraphics[width=10cm]{cover.jpg}
+    \else
+    \subfloat[]{
+    \label{fig0120_a}
+    \includegraphics{fig0120_a.pdf}
+    }
+    \hspace{10pt}%
+    \subfloat[]{
+    \label{fig0120_b}
+    \includegraphics{fig0120_b.pdf}
+    }
+    \fi
+    \caption{瞬态液动力}%题注
+    \label{fig:fig0120}
+\end{figure}  
 
     滑阀上瞬态液动力的方向，视油液流入还是流出阀口而定。图1 - 20（a）中油液流出阀口，当阀口开度加大时长度为$l$的那部分油液加速，开度减小时油液减速，这两种情况下瞬态液动力作用方向都与阀芯移动方向相反,起着阻止阀芯移动的作用，相当于一个阻尼力,并将$l$称之为“正阻尼长度”。反之，图1 - 20（b）的情况油液流入阀口，阀口开度变化时引起液流流速变化的结果，都是使瞬态液动力的作用方向与阀芯移动方向相同，起着帮助阀芯移动的作用，相当于一个负的阻尼力。这种情况下$l$称为“负阻尼长度"。
 
@@ -36,18 +75,29 @@ F_\text{a}=\rho l \frac{dQ}{dt}
 
 当液流为层流状态时，其流量及沿程压力损失均可由理论公式计算。
 
+\begin{figure}
+    \centering
+    \ifOpenSource
+    \includegraphics[width=10cm]{cover.jpg}
+    \else
+    \includegraphics{fig0121.pdf}
+    \fi
+    \caption{圆管中层流}%题注
+    \label{fig0121}
+\end{figure}
+
 图1 - 21所示为液体在等径（半径为$R$）水平圆管中作恒定层流时的情况。在图中的管内取出一段半径为$r$，长度为$l$，与管轴相重合的微小圆柱体，作用在其两端面上的压力为$p_{1}$和$p_{2}$，作用在侧面上的内摩擦力为$F_{f}$。根据力的平衡，有
 \begin{equation*}
 (p_{1}-p_{2})\pi r^{2}=F_{f}
 \end{equation*}
 内摩擦力按式（1 - 6）计算为
 \begin{equation*}
-F_{f}=-2\pi \mu rl \frac{du}{dr}
+F_{f}=-2\pi \mu rl \frac{\mathrm{d}u}{\mathrm{d}r}
 \end{equation*}
 
 图1 - 21所示坐标轴中速度梯度为负值,故式中加一负号以使摩擦力为正值。令$\Delta p$=$p_{1}$-$p_{2}$，将这些关系代入上式，则有
 \begin{equation}
-\frac{du}{dr}=-\frac{\Delta p}{2\mu l}r
+\frac{\mathrm{d}u}{\mathrm{d}r}=-\frac{\Delta p}{2\mu l}r
 \end{equation}
 
 \noindent 对式（1 - 38）进行积分得
@@ -71,7 +121,7 @@ u_{max}=\frac{\Delta p}{4\mu l}R^{2}=\frac{\Delta p}{16\mu l}d^{2}
 
 由式（1 - 39）看出，液体在圆管中作层流流动时，速度按对称于管轴的抛物线规律分布。由于速度分布不均匀，为了计算流量，在半径r处取一层厚为$dr$的微小圆环面积（见图1 - 21），通过此环形面积的流量为
 \begin{equation*}
-dQ=2\pi urdr
+\mathrm{d}Q=2\pi ur\mathrm{d}r
 \end{equation*}
 对此式积分
 \begin{equation}
@@ -92,10 +142,10 @@ v=\frac{Q}{A}=\frac{4Q}{\pi d^{2}}=\frac{\frac{\pi R^{4}}{8\mu l}\Delta p}{\pi R
 
 由速度分布规律，可计算出通流截面上的实际动能和实际动量,则可进一步求出动能修正系数$\alpha$（式（1-28））及动量修正系数$\beta$（式（1-34））。
 \begin{equation*}
-\alpha =\frac{\int_{A}u^{3}dA}{v^{3}A}=\frac{\int_{0} ^{R}[\frac{\Delta p(R^{2}-r^{2})}{4\mu l}]^{3}2\pi rdr}{[\frac{\Delta pR^{2}}{8\mu l}]^{3}\pi R^{2}}=2
+\alpha =\frac{\int_{A}u^{3}\mathrm{d}A}{v^{3}A}=\frac{\int_{0} ^{R}[\frac{\Delta p(R^{2}-r^{2})}{4\mu l}]^{3}2\pi r\mathrm{d}r}{[\frac{\Delta pR^{2}}{8\mu l}]^{3}\pi R^{2}}=2
 \end{equation*}
 \begin{equation*}
-\beta =\frac{\int_{A}u^{2}dA}{v^{2}A}=\frac{\int_{0} ^{R}[\frac{\Delta p(R^{2}-r^{2})}{4\mu l}]^{2}2\pi rdr}{[\frac{\Delta pR^{2}}{8\mu l}]^{2}\pi R^{2}}=\frac{4}{3}\approx 1.33
+\beta =\frac{\int_{A}u^{2}\mathrm{d}A}{v^{2}A}=\frac{\int_{0} ^{R}[\frac{\Delta p(R^{2}-r^{2})}{4\mu l}]^{2}2\pi r\mathrm{d}r}{[\frac{\Delta pR^{2}}{8\mu l}]^{2}\pi R^{2}}=\frac{4}{3}\approx 1.33
 \end{equation*}
 
 伯努利方程中$h_{w}$一项，若仅考虑沿程损失，管径不变并水平安放，则可按式（1 - 29）求出
@@ -124,3 +174,13 @@ h_{\lambda}=\frac{\Delta p}{\rho g}=\frac{64}{\rho \frac{ud}{\mu}}=\frac{l}{d} \
 \begin{equation*}
 \lambda= \frac{80}{Re}
 \end{equation*}
+\begin{figure}
+    \centering
+    \ifOpenSource
+    \includegraphics[width=10cm]{cover.jpg}
+    \else
+    \includegraphics{fig0122.pdf}
+    \fi
+    \caption{沿途阻力系数曲线图}%题注
+    \label{fig0122}
+\end{figure}

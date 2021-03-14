@@ -1,6 +1,36 @@
+\begin{figure}[!hbt]
+\centering
+\ifOpenSource
+\includegraphics[height=2.5cm]{logo.png}
+\else
+\includegraphics{fig0427.pdf}
+\fi
+\caption{定量泵系统溢流调压}
+\label{fig:fig0427}
+\end{figure}
+\begin{figure}[!hbt]
+\centering
+\ifOpenSource
+\includegraphics[height=2.5cm]{logo.png}
+\else
+\includegraphics{fig0428.pdf}
+\fi
+\caption{变量泵系统的安全限压}
+\label{fig:fig0428}
+\end{figure}
 
-\mainmatter
 图4-29所示为一种采用两个溢流阀的多级调压回路。图中3为远程调压阀，接溢流阀2的外控口即图4-20、图4-21中的K口。图示位置表明，当二位二通电磁阀4关闭时，泵的出口压力由溢流阀2调定为$p_{1}$。在二位二通电磁阀通电切换后，如远程调压阀3的调整压力$p_{2}$低于溢流阀2的调整压力$p_{1}$，则泵的出口压力由远程调压阀调定为$p_{2}$；如远程调压阀的调整压力$p_{2}$大于$p_{1}$，则远程调压阀就不起作用。
+
+\begin{figure}[!hbt]
+\centering
+\ifOpenSource
+\includegraphics[height=2.5cm]{logo.png}
+\else
+\includegraphics{fig0429.pdf}
+\fi
+\caption{多级调压回路}
+\label{fig:fig0429}
+\end{figure}
 
 如果把二位二通电磁阀4放置在溢流阀2与远程调压阀3之间，则当压力切换时，可能产生较大的压力波动与冲击。
 
@@ -16,9 +46,53 @@
 
 图4-32所示为一些液压系统广为使用的J型减压阀的结构。
 
+\begin{figure}[!hbt]
+\centering
+\ifOpenSource
+\includegraphics[height=2.5cm]{logo.png}
+\else
+\includegraphics{fig0430.pdf}
+\fi
+\caption{两个溢流阀串联的调压回路}
+\label{fig:fig0430}
+\end{figure}
+
+\begin{figure}[!hbt]
+\centering
+\ifOpenSource
+\includegraphics[height=2.5cm]{logo.png}
+\else
+\includegraphics{fig0431.pdf}
+\fi
+\caption{先导溢流阀式卸荷回路}
+\label{fig:fig0431}
+\end{figure}
+
+\begin{figure}[!hbt]
+\centering
+\ifOpenSource
+\includegraphics[height=2.5cm]{logo.png}
+\else
+\includegraphics{fig0432.pdf}
+\fi
+\caption{J型减压阀结构}
+\label{fig:fig0432}
+\end{figure}
+
 图4-33为一种推广型先导式定值减压阀的结构，它的主要组成与溢流阀相同，外形亦相似。
 
 进入减压阀的压力油的压力$p_{1}$经阀口降低为$p_{2}$，从减压阀出口流出。同时$p_{2}$还通过阻尼孔2、管道4进入先导阀7的阀座底部并与主阀弹簧腔相通。压力油$p_{2}$作用在主阀芯1两端并作用在锥阀6上，当出口压力$p_{2}$小于先导阀的调整压力时，锥阀6关闭，阻尼孔2无油流通，主阀芯1两端液压力相等，而主阀芯在弹簧14的作用下，阀口全部打开，使油液在压降较小的情况下流出，这时减压阀没有工作。当出口压力$p_{2}$大于先导阀的调整压力时，锥阀6打开，油液经阻尼孔2、管道4、先导阀弹簧腔9、管道10流回油箱。由于阻尼孔2的作用，主阀芯1弹簧腔的压力低于$p_{2}$，造成阀芯1两端的压力不平衡，使阀芯移动，进而使阀口减小，使压力油流过阀口时压降加大，出口压力$p_{2}$减至某调定值。出口处保持调定压力时，阀芯1处于某一平衡位置上，此时阀口保持一定的开口度，减压阀处于工作状态。如果由于某种原因使进口压力$p_{1}$发生变化当阀口还没有来得及变化时，$p_{2}$则相应发生变化，造成阀芯1两端的受力状况发生变化，破坏了原来的平衡状态，使阀芯到达另一平衡状态,以保持$p_{2}$的稳定。阻尼孔3起稳定阀芯1的作用。
+
+\begin{figure}[!hbt]
+\centering
+\ifOpenSource
+\includegraphics[height=2.5cm]{logo.png}
+\else
+\includegraphics{fig0433.pdf}
+\fi
+\caption{先导式减压阀}
+\label{fig:fig0433}
+\end{figure}
 
 图4-34所示为减压阀工作原理图，减压阀稳定工作时阀芯受力平衡方程式可列写如下：
 \begin{equation}
@@ -35,6 +109,17 @@ $G$ &—— \ 主阀芯自重；\\
 $F_\text{f}$ &—— \ 主阀芯与阀体之间的摩擦力；\\
 $F_\text{w}$ &—— \ 稳态轴向液动力。
 \end{tabular}  
+
+\begin{figure}[!hbt]
+\centering
+\ifOpenSource
+\includegraphics[height=2.5cm]{logo.png}
+\else
+\includegraphics{fig0434.pdf}
+\fi
+\caption{减压阀工作原理图}
+\label{fig:fig0434}
+\end{figure}
 
 如果忽略阀芯自重、摩擦力及液动力的影响，则上式可写成
 \begin{equation}
@@ -60,11 +145,33 @@ $p^{'}_2$由先导阀调定，基本不变，而$F_\text{s}$因弹簧刚度较�
 
 图4-35所示为减压阀应用在夹紧油路时的减压回路，液压泵1排出的油液，其最大工作压力由溢流阀2根据主系统的负载要求加以调节。当液压缸5这一支路需要比液压泵供油压力低的油液时，在支路上设置一减压阀3，就可得到比溢流阀2调定压力低的压力。但当溢流阀的调节压力低于减压阀的调节压力时，减压阀不起作用。
 
+\begin{figure}[!hbt]
+\centering
+\ifOpenSource
+\includegraphics[height=2.5cm]{logo.png}
+\else
+\includegraphics{fig0435.pdf}
+\fi
+\caption{减压回路}
+\label{fig:fig0435}
+\end{figure}
+
 \section{顺序阀}
 
 顺序阀是用压力作为控制信号以实现油路的通断。按调压方式的不同，可分为直控式顺序阀与液控式顺序阀两种。
 
 顺序阀的结构与工作原理和溢流阀相似，现以图4-36为例说明其结构和工作原理。主阀和先导阀均为滑阀式，其外形与溢流阀相似。
+
+\begin{figure}[!hbt]
+\centering
+\ifOpenSource
+\includegraphics[height=2.5cm]{logo.png}
+\else
+\includegraphics{fig0436.pdf}
+\fi
+\caption{先导式顺序阀}
+\label{fig:fig0436}
+\end{figure}
 
 压力油进人顺序阀作用在主阀一端，同时压力油一路经管道4进入先导阀7左端,作用在滑阀6的左端面上，一路经阻尼孔2进入主阀芯1上端，并进人先导阀的中间环形部分。当进油压力低于先导阀的调整压力时，主阀芯1关闭，顺序阀无油流出。一旦进油压力超过先导阀的调整压力时，进入先导阀左端的压力将滑阀6推向右边，此时先导阀7的中间环形部分与顺序阀出口沟通，压力油经阻尼孔2、主阀芯1上腔、先导阀7流向出口。由于有液阻，主阀芯1上腔压力低于进口压力，主阀芯移动，使顺序阀进出口沟通。从上分析可知，主阀芯1的移动是主阀芯
 

@@ -1,9 +1,20 @@
-
 \noindent 上可允许油管通过,进、出油管穿过活塞杆,直接使用硬管与液压装置或液压泵连接。这样就避免了由于较长软管的弹性变形引起动力滑台在转换中产生“前冲”、“后坐”现象。使液压缸无杆腔为高压工作腔,这样能得到较大的输出动力,并可得到较低的稳定工作速度,以便满足精加工的要求。
 
 下面按设计步骤进行计算。
 
 \section{计算外负载}
+
+\begin{figure}
+    \centering
+    \ifOpenSource
+    \includegraphics{cover}
+    \else
+    \includegraphics{fig0801.pdf}
+    \fi
+    \caption{动力滑台受力分析简图}
+    \label{fig:fig0801}
+\end{figure}
+
 动力滑台受力情况如图8-1所示。当机床上的液压缸做直线往复运动时,液压缸必须克服的外载$F$为
 \begin{equation}
     F=F_t +F_f+F_{\text{m}}+F_g+F_{\text{b}}
@@ -52,6 +63,28 @@ V型导轨
 
 详细计算各种导轨上的摩擦阻力见机床设计有关部分,计算中如颠覆力矩数值较小可以
 忽略不计。
+
+\begin{figure}
+    \centering
+    \ifOpenSource
+    \includegraphics{cover}
+    \else
+    \includegraphics{fig0802.pdf}
+    \fi
+    \caption{导轨形式\\(a)平导轨;(b)V型导轨}
+    \label{fig:fig0802}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \ifOpenSource
+    \includegraphics{cover}
+    \else
+    \includegraphics{fig0803.pdf}
+    \fi
+    \caption{倾斜导轨}
+    \label{fig:fig0803}
+\end{figure}
 
 本例导轨摩擦阻力由动力滑台和颠覆力矩产生,若忽略颠覆力矩的影响,则
 
@@ -115,6 +148,17 @@ $$t_{2\min}=\frac{l_2}{v_{2\max}}=\frac{100\times10^{-3}}{20\times 10^{-3}}=5\ \
 $$t_3=\frac{l_3}{v_3}=\frac{200\times10^{-3}}{0.1}=2\ \text{s}$$
 
 配合表8-2中相应负载的数值,可绘制$F-t$和$v-t$图,如图8-4所示。
+
+\begin{figure}
+    \centering
+    \ifOpenSource
+    \includegraphics{cover}
+    \else
+    \includegraphics{fig0804.pdf}
+    \fi
+    \caption{液压缸负载图和速度图\\(a)$F-t$图;(b)$v-t$图}
+    \label{fig:fig0804}
+\end{figure}
 
 此图清楚地表明了液压缸在运动循环内负载的变化规律。图中最大负载值是初选液压缸工作压力和确定液压缸结构尺寸的依据。
 

@@ -23,42 +23,50 @@ $Q_{\rm min}$ &——液压缸最小的稳定流量。
 
 本例由于取液压缸前、后腔有效面积之比为$2:1$,因此得液压缸无杆腔有效工作面积$A_{1}$为
 \begin{equation*}
-A_{1}=\frac{F_0}{(p_1-\frac{1}{2}p_2)}=\frac{15556}{(44-\frac{6}{2})\times 10^5}\approx 37.9 \times 10^{-4}m^2
+A_{1}=\frac{F_0}{(p_1-\frac{1}{2}p_2)}=\frac{15556}{(44-\frac{6}{2})\times 10^5}\approx 37.9 \times 10^{-4}\quad\rm{m^2}
 \end{equation*}
-
-取$$A_1=38\times 10^{-4}m^2$$
-
+取$$A_1=38\times 10^{-4}\quad\rm{m^2}$$\\
 故液压缸内径$D$为
 \begin{equation*}
-D=\sqrt {\frac{4A_1}{\pi}}=\sqrt{\frac{4\times 38\times 10^{-4}}{\pi}}\approx 6.96\times 10^{-2}m
+D=\sqrt {\frac{4A_1}{\pi}}=\sqrt{\frac{4\times 38\times 10^{-4}}{\pi}}\approx 6.96\times 10^{-2}\quad\rm{m}
 \end{equation*}
-按表8-5取标准值 $$D=7\times 10^{-2}m$$
 
+按表8-5取标准值 $$D=7\times 10^{-2}\quad\rm{m}$$\\
 按式（3-10）计算活塞杆直径
 \begin{equation*}
-d=0.7D\approx 5\times 10^{-2}m(\text{标准直径})
+d=0.7D\approx 5\times 10^{-2}\quad\rm{m}(\text{标准直径})
 \end{equation*}
-
-液压缸尺寸取标准值之后的有效工作面积：
-
+液压缸尺寸取标准值之后的有效工作面积：\\
 无杆腔面积 
 \begin{equation*}
-A_1=\frac{\pi D^2}{4}=\frac{3.14\times (7\times 10^{-2})^2}{4}\approx 38.5\times 10^{-4}m^2
+A_1=\frac{\pi D^2}{4}=\frac{3.14\times (7\times 10^{-2})^2}{4}\approx 38.5\times 10^{-4}\quad\rm{m^2}
 \end{equation*}
 有杆腔面积
 \begin{equation*}
-A_2=\frac {\pi}{4}(D^2-d^2)=\frac{3.14}{4}(7^2-5^2)\times 10^{-4}\approx 18.8\times 10^{-4}m^2
+A_2=\frac {\pi}{4}(D^2-d^2)=\frac{3.14}{4}(7^2-5^2)\times 10^{-4}\approx 18.8\times 10^{-4}\quad\rm{m^2}
 \end{equation*}
 活塞缸面积 
 \begin{equation*}
-A_3=A_1-A_2=19.7\times 10^{-4}m^2
+A_3=A_1-A_2=19.7\times 10^{-4}\quad\rm{m^2}
 \end{equation*}
 \subsection{计算液压缸在工作循环中各阶段所需的压力、流量和功率}
 根据表8-7计算,表中 $F_0$为液压缸的驱动力,由表8-2查得。
 \subsection{绘制液压缸的工况图}
 根据表8-7,即可绘制液压缸的流量图、压力图和功率图,如图8-5所示。
+
 工况图的作用是:
+
 (1)通过工况图找出最大压力、最大流量点和最大功率点,分析各工作阶段中压力、流量变化的规律,作为选择液压泵和控制阀的依据。
+\begin{figure}
+\centering
+\ifOpenSource
+\includegraphics[scale=0.5]{logo.png}
+\else
+\includegraphics{fig0805.pdf}
+\fi
+\caption{液压缸工况图（a）流量图；(b)压力图；(c)功率图}
+\label{fig:fig0805}
+\end{figure}
 
 (2)验算各工作阶段所确定参数的合理性。例如,当功率图上各阶段的功率相差太大时，可在工艺情况允许的条件下，调整有关阶段的速度,以减小系统需用的功率。当系统有多个液压缸工作时,应把各液压缸的功率图按循环要求叠加后进行分析,若最大功率点相互重合,功率分布很不均衡,则同样应在工艺条件允许情况下，适当调整参数,避开或削减功率“高峰”,增加功率利用的合理性,以提高系统的效率。
 

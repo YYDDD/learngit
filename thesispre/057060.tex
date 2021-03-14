@@ -1,3 +1,5 @@
+
+
 \begin{equation*}
     tan x = \frac{x}{\frac{D}{2}-\frac{D}{2}\cos \theta }
 \end{equation*}
@@ -5,12 +7,13 @@
     $$ x = \frac{D}{2}(1-\cos \theta )\tan \delta $$
 
     柱塞轴向移动速度 $v$ 为
-\begin{equation}
-    v = \frac{dx}{dt} = \frac{dx}{d\delta} \frac{d\delta}{dt}=\frac{dx}{d\delta}\omega=\frac{D}{2}\omega\tan\delta\sin\delta
+\begin{equation}\label{2.28}
+    v = \frac{dx}{dt} = \frac{dx}{d\delta} \qquad\frac{d\delta}{dt}=\frac{dx}{d\delta}\omega=\frac{D}{2}\omega\tan\delta\sin\delta
 \end{equation}
     式中 $\omega $为泵传动轴的角速度（常数）。
 
-    从式（$2-28$）中可看出，柱塞的轴向移动速度随转交$\delta$而变，
+
+    从式(\ref{2.28})中可看出，柱塞的轴向移动速度随转交$\delta$而变，
 因此每个柱塞的瞬时流量$q'_{z}$也随$\delta$而变，即
   $$q'_{z} =\frac{\pi }{4} d^2v=\frac{\pi }{4}d^2\frac{D}{2}\omega \tan \delta \sin \theta =\frac{\pi }{8}d2D\tan \delta \sin \theta$$
   
@@ -36,11 +39,21 @@ z为奇数时
     \end{cases}
 \end{equation*}
 
-轴向柱塞泵的流量脉动系数$\sigma $与柱塞数$z$的关系如表2——1所示。由表中可以看出柱塞数z
+轴向柱塞泵的流量脉动系数$\sigma $与柱塞数$z$的关系如表\ref{tab0201}所示。由表中可以看出柱塞数z
 愈大，流量脉动系数愈小，且柱塞数为奇数时的脉动系数比偶数时的脉动系数小得多，故一般采用奇数
 柱塞，如z=7或9。
 
-图2-19所示为轴向柱塞式手动变量泵的典型结构，这种泵由泵体和倾斜盘两部分组成。
+\begin{table}[!htb]\centering
+    \caption{轴向柱塞泵$z$与$\delta$ 的关系}
+		\label{tab0201}
+    \begin{tabular}{@{}cccccccc@{}}
+    \toprule
+    z      & 5    & 6    & 7    & 8   & 9    & 10  & 11   \\ \midrule
+    $\delta$ /(\%) & 4.98 & 13.9 & 2.53 & 7.8 & 4.53 & 5.0 & 1.02 \\ \bottomrule
+    \end{tabular}
+    \end{table}
+
+图\ref{fig0219}所示为轴向柱塞式手动变量泵的典型结构，这种泵由泵体和倾斜盘两部分组成。
 泵体部分包括转子（缸体）6、配油盘7、柱塞5、传动轴8等零件。传动轴8利用轴左端的花键部
 分带动缸体旋转，在缸体6的7个轴向排列的柱塞缸中，各装有柱塞5，柱塞5的球形头部铆合
 在滑履4中，使滑履不会脱离柱塞球头，在球形配合面间可以相对转动。由传动轴中心弹簧通
@@ -52,6 +65,17 @@ z为奇数时
 外表面，镶有钢套并由滚柱轴承支承，使倾斜盘给缸体的径向分力由该滚柱轴承来承受，从而
 使传动轴和缸体不承受颠覆力矩，以保证缸体端面与配油盘均匀接触。
 
+\begin{figure}[!htb]\centering
+    \ifOpenSource
+    \includegraphics[height=4.5cm,width=7.5cm]{logo.png}
+    \else
+    \includegraphics[height=4.5cm,width=7.5cm]{cover.jpg}
+    \fi
+    \caption{轴向柱塞式手动变量泵}
+    \label{fig0219}
+\end{figure}
+
+
 倾斜盘部分主要包括倾斜盘和变量机构。转动手柄1，通过丝杆移动螺母滑块，使倾斜盘
 绕钢球中心摆动，改变倾斜盘斜角$\delta $的大小，实现流量的调节。
 
@@ -61,7 +85,7 @@ $320×10^5\ Pa$，具有自吸能力。缺点在于滑履和倾斜盘之间的�
 \subsubsection{轴向液压马达的工作原理和结构}
 
 轴向柱塞液压马达在机床液压系统中用得较多，它的结构和轴向柱塞泵基本相同。圈
-2-20所示为轴向柱塞液压马达的工作原理，其中倾斜盘1和配油盘4是固定不动的，转子征
+\ref{fig0220}所示为轴向柱塞液压马达的工作原理，其中倾斜盘1和配油盘4是固定不动的，转子征
 体2与液压马达传动轴5相连并一起转动。倾斜盘的中心线与转子缸体的轴线相交一个倾斜
 角$\delta $，当压力油通过配油盘的进油窗口输入到缸体的柱塞孔时，处于高压区的各个柱塞，在压
 力油的作用下，顶在倾斜盘的端面上。倾斜盘给每个柱塞的反作用力$F$是垂直于倾斜盘端面
@@ -78,6 +102,16 @@ $$F_{y}=F_{x}\tan \delta =\frac{\pi }{4}d^2p\tan \delta $$
 垂直分力$F_{y}$，使处于压油区的每个柱塞都对转子中心产生一个转矩，这些转矩的总和使
 缸体带动液压马达输出轴作逆时针方向旋转。若使进、回油路交换，即改变输油方向，则液
 马达的旋转方向亦随之而改变。
+
+\begin{figure}[!htb]\centering
+    \ifOpenSource
+    \includegraphics[height=4.5cm,width=7.5cm]{logo.png}
+    \else
+    \includegraphics[height=4.5cm,width=7.5cm]{cover.jpg}
+    \fi
+    \caption{轴向柱塞液压马达的工作原理}
+    \label{fig0220}
+\end{figure}
 
 液压马达的转速$n_{m}$取决于输入液压马达的实际流量$Q_{m}$和液压马达的排量$q_{m}$，即
 \begin{equation}
@@ -107,7 +141,7 @@ $$F_{y}=F_{x}\tan \delta =\frac{\pi }{4}d^2p\tan \delta $$
 $$T_{z}=Fy\frac{D}{2}\sin\theta =\frac{\pi }{2} d^2pD\tan \delta \sin \theta  $$
 
 液压马达的理论瞬时输出总转矩应由所有处于高压区的柱塞产生的转矩所组成
-\begin{equation}
+\begin{equation}\label{2.32}
     \begin{split}
         T'_{m}&=\frac{\pi}{8}d^2pD\tan\delta {\sin\theta +
         sin(\theta +\frac{\pi}{2})+\dots+\sin[\theta +(i-1)\frac{2\pi}{z}]}\\
@@ -116,11 +150,11 @@ $$T_{z}=Fy\frac{D}{2}\sin\theta =\frac{\pi }{2} d^2pD\tan \delta \sin \theta  $$
 \end{equation}
 式中$z_{0}$为处在高压区的柱塞数。
 
-由式（2-32)可知，瞬时输出的转矩$T'_{m}$随柱寒转角$\theta $而变化，其脉动情况与轴向柱塞泵的
+由式(\ref{2.32})可知，瞬时输出的转矩$T'_{m}$随柱寒转角$\theta $而变化，其脉动情况与轴向柱塞泵的
 流量脉动一样，当柱塞数较多且为单数时，输出转矩的脉动较小。同样，当输入流量不变时，输
 出转速脉动较小，转动平稳。
 
-图2-21所示为轴向柱塞液压马达的结构，它和轴向柱塞泵类似，也是由缸体7、柱塞9、配
+图\ref{fig0221}所示为轴向柱塞液压马达的结构，它和轴向柱塞泵类似，也是由缸体7、柱塞9、配
 油盘8、倾斜盘2、传动轴1等主要零件组成。为了保证缸体和配油盘相对运动表面之间的密
 封性，应该使配油盘表面不受颠覆力矩，以减少磨损，为此将转子分成两段，左半段称鼓轮4，
 右半段就是缸体7。鼓轮4上有可以轴向滑动的推杆10，推杆在柱塞的作用下，顶在倾斜盘
@@ -132,6 +166,16 @@ $$T_{z}=Fy\frac{D}{2}\sin\theta =\frac{\pi }{2} d^2pD\tan \delta \sin \theta  $$
 既保证了密封性能又能自动补偿磨损。倾斜盘由推力轴承支撑，目的是为了减少推杆端部与
 倾斜盘端面的磨损和提高液压马达的机械效率。因为该液压马达倾斜角是固定不变的，它的
 排量不可调节，属定量液压马达，它的转速只能通过改变输入流量的大小来调节。
+
+\begin{figure}[!htb]\centering
+    \ifOpenSource
+    \includegraphics[height=4.5cm,width=7.5cm]{logo.png}
+    \else
+    \includegraphics[height=4.5cm,width=7.5cm]{cover.jpg}
+    \fi
+    \caption{轴向柱塞马达的结构}
+    \label{fig0221}
+\end{figure}
 
 \subsection{液压泵的流量调节}
 

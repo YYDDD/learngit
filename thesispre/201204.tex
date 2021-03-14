@@ -9,6 +9,28 @@ T&=\frac{V_{t}}{4K(K_{c}+C)}\text{(时间常数)}
 
 \noindent 则系统结构简化成图9-16结构形式。
 
+\begin{figure}[!hbt]
+    \centering
+    \ifOpenSource
+    \includegraphics[width=0.5\textwidth]{logo.png}
+    \else
+    \includegraphics{fig0915}
+    \fi
+    \caption{系统结构图和等效过程}
+    \label{fig:fig0915}
+\end{figure}
+
+\begin{figure}[!hbt]
+    \centering
+    \ifOpenSource
+    \includegraphics[width=0.5\textwidth]{logo.png}
+    \else
+    \includegraphics{fig0916}
+    \fi
+    \caption{系统结构}
+    \label{fig:fig0916}
+\end{figure}
+
 从图9-16可得，系统对输入信号$X_{\text{r}}(s)$的闭环传递函数为
 \begin{align}
     \varPhi_{\text{r}}(s)=\frac{X_{\text{cr}}(s)}{X_{\text{r}}(s)}=\frac{K_{v}}{\frac{1}{\omega_{\text{n}}^2}s^3+\frac{2\zeta }{\omega_{\text{n}}}s^2+s+K_{v}}
@@ -43,7 +65,7 @@ T&=\frac{V_{t}}{4K(K_{c}+C)}\text{(时间常数)}
 
 相应的劳斯表为
 
-\begin{table*}
+\begin{table*}[!hbt]
 \centering
 \renewcommand\arraystretch{1.5}
 \begin{tabular}{p{1cm}<{\centering}|p{2.5cm}<{\centering}p{1cm}<{\centering}}
@@ -88,10 +110,43 @@ T&=\frac{V_{t}}{4K(K_{c}+C)}\text{(时间常数)}
     W_{\text{r}}(s)=\frac{K_{v}}{s(\frac{1}{\omega_{\text{n}}^2}s^2+\frac{2\zeta }{\omega_{\text{n}}}s+1)}
 \end{align}
 
+\begin{figure}[!hbt]
+    \centering
+    \ifOpenSource
+    \includegraphics[width=0.5\textwidth]{logo.png}
+    \else
+    \includegraphics{fig0917}
+    \fi
+    \caption{机液伺服系统（液压仿形刀架）开环波德图}
+    \label{fig:fig0917}
+\end{figure}
+
 \noindent 则系统的开环对数频率特性曲线（波德图）如图
 9-17所示。为了确保系统稳定并使系统具有良好的过渡过程，必须使系统具有一定的稳定裕量（相角裕量$\gamma $和幅值裕量$h$）。为此，在自然频率$\omega_{\text{n}}$一定的情况下，必须严格控制开环增益$K_{v}$和阻尼比$\zeta $值，图中曲线\textcircled{1}所示系统是稳定的，且具有一定稳定裕量。当阻尼比$\zeta $不变而使开环增益$K_{v}$增加时,
 将会使对数幅频特性曲线向上平移而使系统变为不稳定，如图中曲线\textcircled{2}所示。当开环增益$K_{v}$不变，阻尼比$\zeta $减小也同样使稳定裕量减小，甚至变为不稳定，如图中曲线\textcircled{3}所示。因此使系统具有一定的阻尼比是改善系统动态性能的重要途径。从式（9-19）可知，适当地增加滑阀放大器的流量——压力系数$K_{c}$或液压缸的综合泄漏系数$C$值可以使阻尼比$\zeta $加大。
 从图9-14可知，采用具有一定的正开口的滑阀可使$K_{p}$下降，$K_{c}$加大。也可以采用在执行元件的两腔间跨接一个固定节流器，如图9-18所示，人为地造成一定的泄漏量使$C$值增加。用这两种方法来增加阻尼比固定方便可行，但都造成无功流量的增加而降低了系统的效率，并且从式（9-20）可知，$K_{c}$或$C$值的增加将使刚度系数$G$下降。从以后的分析将知道，刚度系数$G$下降使系统静态误差加大。
+
+\begin{figure}[!hbt]
+    \centering
+    \ifOpenSource
+    \includegraphics[width=0.5\textwidth]{logo.png}
+    \else
+    \includegraphics{fig0918}
+    \fi
+    \caption{用跨接液阻的方式增加阻尼比}
+    \label{fig:fig0918}
+\end{figure}
+
+\begin{figure}[!hbt]
+    \centering
+    \ifOpenSource
+    \includegraphics[width=0.5\textwidth]{logo.png}
+    \else
+    \includegraphics{fig0919}
+    \fi
+    \caption{仿形刀架的信号流图}
+    \label{fig:fig0919}
+\end{figure}
 
 还应指出，提高油液的综合体积弹性模量$K$值，不仅可以使阻尼比$\zeta $适当增加，而且尤为重要的是使系统自然频率$\omega_{\text{n}}$提高，从式（9-24）可知，这将改善系统的稳定性。因此，在保证一定的稳定裕量的条件下，可提高开环增益$K_{v}$和系统的快速性，而$K_{v}$的增加又会提高系统的静态精度，减小静态误差。然而空气渗入到系统内部将会使油液综合体积弹性模量$K$值严重下降。
 为此必须采用各种措施严格防止空气的渗入。对于这点，液压伺服系统比一般液压传动系统要求更为严格。此外，液压缸与滑阀之间尽量不要用软管连接，软管弹性变形大，促使$K$值下降。

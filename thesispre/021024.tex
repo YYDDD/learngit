@@ -20,6 +20,17 @@ $\alpha_1$和$\alpha_2$为动能修正系数。式(1 - 29)仍然是能量守恒�
 如图1-15所示的水箱侧壁开一小孔,水箱自由液面1-1与小孔2-2处的压力分别为$p_1$和$p_2$，小孔中心到水箱自由液面的距离为$h$,且$h$基本不变，如果不计损
 失，求水从小孔流出的速度。
 
+\begin{figure}[htb]
+\centering
+\ifOpenSource
+\includegraphics[width=10cm]{cover.jpg}   
+\else
+\includegraphics{fig0115.pdf}
+\fi
+\caption{侧壁孔出流}
+\label{fig:fig0115}
+\end{figure}
+
 解\ 以小孔中心线为基准，列出1-1和2-2的伯努利方程，即
 \begin{equation*}
 z_1+\frac{p_1}{\rho g}+\frac{\alpha_1v_1^2}{2g}=z_2+\frac{p_2}{\rho g}+\frac{\alpha_2v_2^2}{2g}+h_w
@@ -34,6 +45,17 @@ z_1+\frac{p_1}{\rho g}+\frac{\alpha_1v_1^2}{2g}=z_2+\frac{p_2}{\rho g}+\frac{\al
 \end{equation*}
 
 例1-3\ 推导文丘利流量计的流量公式。
+
+\begin{figure}
+  \centering
+  \ifOpenSource
+  \includegraphics[width=10cm]{cover.jpg}   
+  \else
+  \includegraphics{fig0116.pdf}
+  \fi
+  \caption{文丘利流量计}
+  \label{fig:fig0116}
+  \end{figure}
 
 解\ 图1-16所示为文丘利流量计，1-1和2-2两通流截面处直径分别为$D_1$和$D_2$，现以管轴心线为基准，且取$\alpha_1=\alpha_2=1$,不计能量损失，列出两截面的伯努利方程，即
 \begin{equation*}
@@ -54,9 +76,9 @@ z_1+\frac{p_1}{\rho g}+\frac{\alpha_1v_1^2}{2g}=z_2+\frac{p_2}{\rho g}+\frac{\al
     \end{equation*}
 \noindent 式中\
 \begin{tabular}[t]{ll}
-$h$ &——\ 测压管高度差；\\
-$\rho_{\Lambda g}$ &——\ 水银的密度；\\
-$\rho$ &——\ 被测液体密度。
+$h$&——\ 测压管高度差；\\
+$\rho_{\Lambda g}$&——\ 水银的密度；\\
+$\rho$&——\ 被测液体密度。
 \end{tabular}
 
 通过的流量
@@ -76,6 +98,17 @@ Q=v_1A_1=\frac{\pi D_1^2}{4}\sqrt{\frac{2gh(\frac{\rho_{\Lambda g}}{\rho}-1)}{\f
 设包围控制体的表面就是通流截面\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1}
 和\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}以及周面，而周面可以是固定壁面或者是由无数流线组成的液面,因此无流体经此周面流入和流出控制体，
 流体只能经通流截面\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1}和\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}流入和流出控制体。
+
+\begin{figure}
+  \centering
+  \ifOpenSource
+  \includegraphics[width=10cm]{cover.jpg}   
+  \else
+  \includegraphics{fig0117.pdf}
+  \fi
+  \caption{控制体与动量方程}
+  \label{fig:fig0117}
+  \end{figure}
 
 在某时刻$t$，占据控制体的液体所处的空间区城为\uppercase\expandafter{\romannumeral1}-\uppercase\expandafter{\romannumeral1}至\uppercase\expandafter{\romannumeral2}-\uppercase\expandafter{\romannumeral2}段，经d$t$时间后运动
 到\uppercase\expandafter{\romannumeral1}'-\uppercase\expandafter{\romannumeral1}'至\uppercase\expandafter{\romannumeral2}'-\uppercase\expandafter{\romannumeral2}'位置，
@@ -183,6 +216,18 @@ $CV$&——\ 控制体体积。
 必须注意，液体对壁面作用力的大小和$F$相同,但方向相反。
 
 对于直管或缓变流动的情况，可以用如下公式来求瞬态液动力(见图1-18):
+
+\begin{figure}
+  \centering
+  \ifOpenSource
+  \includegraphics[width=10cm]{cover.jpg}   
+  \else
+  \includegraphics{fig0118.pdf}
+  \fi
+  \caption{控制体与动量方程}
+  \label{fig:fig0118}
+  \end{figure}
+
 \begin{equation*}
  F_a=\frac{\mathrm{d}}{\mathrm{d}t}[\int_{CV}\rho {\boldsymbol u} \mathrm{d}V]=\frac{\mathrm{d}}{\mathrm{d}t}[\int_{CV}\rho {\boldsymbol u} \mathrm{d}s\mathrm{d}A]
  =\rho\frac{\mathrm{d}}{\mathrm{d}t}[\int_{s_1}^{s_2}\mathrm{d}s\int_A\boldsymbol u\mathrm{d}A]=(s_2-s_1)\rho\frac{\mathrm{d}Q}{\mathrm{d}t}

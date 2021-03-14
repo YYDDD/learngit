@@ -1,9 +1,28 @@
-
+\begin{figure}
+   \centering
+    \ifOpenSource  
+    \includegraphics[height=4.5cm]{cover.jpg}
+    \else
+   \includegraphics{fig0421.pdf}
+   \fi
+   \caption{先导式溢流阀}
+   \label{fig:fig0421}
+   \end{figure}
 先导式溢流阀的主阀弹簧14比较软，刚度很小，在很小的外力作用下即可被压缩，主阀芯的位移量大小,对系统的压力影响较小。
 先导阀7的结构尺寸较小，其锥阀6的承压面积亦较小，调压弹簧8不必选用刚度较强的弹簧,因而使调节压力比较轻便。阻尼孔3起到增加主阀芯上下移动的阻尼，可以起稳定主阀芯的作用。%\newline
 \par 由图4-22可以列出溢流阀阀芯受力的平衡方程式
+\begin{figure}
+   \centering
+    \ifOpenSource  
+    \includegraphics[height=4.5cm]{cover.jpg}
+    \else
+   \includegraphics{fig0422.pdf}
+   \fi
+   \caption{先导式溢流阀原理图}
+   \label{fig:fig0422}
+   \end{figure}
 \begin{equation}
-   pA_{v}=F_{s}+G+F_{w}+F_{f}+p^{'}A_{v}\tag{4-1} %行间公式双$符号 
+   pA_{v}=F_{s}+G+F_{w}+F_{f}+p^{'}A_{v} %行间公式双$符号 
 \end{equation}
 \\式中\
 \begin{tabular}[t]{lp{8mm}l}
@@ -19,7 +38,7 @@
 %\\$p^{'}=\frac{F_{s8}}{A_6}$   
 \par $p^{'}$ 由先导阀调定，保持基本不变，$F_{s8}$是先导阀弹簧8的弹簧力，$A_{6}$是锥阀6的承压面积。如将G，$F_f,F_w$略去不计，则上式可写成
 \begin{equation}
-   p=p^{'}+\frac{F_{s}}{A_v}\tag{4-2}
+   p=p^{'}+\frac{F_{s}}{A_v}
 \end{equation}
   
    %  $p=p^{'}+\frac{F_{s}}{A_v}$\ tag{4-2}  
@@ -30,11 +49,33 @@
 \par 1) 压力稳定性。压力稳定性是指溢流阀在调定压力下长期工作的性能。压力稳定性的好坏一般用压力脉动、压力偏移和噪声等的大小来衡量。
 它们的大小与阀的结构、阀芯移动阻尼的大小、加工精度、油液性质和油温的变化等因素有关。一般溢流阀的压力脉动与压力偏移要求不大于$\pm2×10^5Pa$.
 \par 2)启闭特性。启闭特性通常用流量-压力曲线表示，是静态特性中的重要特性。它表示溢流阀从开启到闭合的过程中，通过阀的流量与控制压力之间的关系。
+\begin{figure}
+   \centering
+    \ifOpenSource  
+    \includegraphics[height=4.5cm]{cover.jpg}
+    \else
+   \includegraphics{fig0423.pdf}
+   \fi
+   \caption{溢流阀的启闭特性}
+   \label{fig:fig0423}
+ \end{figure}
+
+ \begin{figure}
+   \centering
+    \ifOpenSource  
+    \includegraphics[height=4.5cm]{cover.jpg}
+    \else
+   \includegraphics{fig0424.pdf}
+   \fi
+   \caption{直动型溢流阀原理图}
+   \label{fig:fig0424}
+   \end{figure}
+
 \par 图4-23所示为溢流阀的启闭特性。理想的溢流阀其特性曲线最好是一条在 $p_t$处平行于纵坐标的直线。它表示溢流阀进口处压力p低于$P_t$时不溢流,仅在p到达$p_t$时才溢流，而且不管溢流量的多少,其压力始终保持在$p_t$值上。
 图4-23所示溢流阀的实际特性曲线说明阀的工作压力是随溢流量的变化而变化的。这组曲线可以通过理论分析和实验得出。下面以图4-24所示的直动型溢流阀的原理图为例,来分析其启闭特性。
 \par 当系统的初始压力为$p_0$时，滑阀尚未开启，但已经处在液压力与弹簧力相平衡的状态,弹簧的预压缩量为$x_0$，滑阀进油口的直径为d,此时
 \begin{equation}
-   \frac{\pi}{4}d^2p_0=K_sx_0\tag{4-3}
+   \frac{\pi}{4}d^2p_0=K_sx_0
 \end{equation}
 \\式中\ 
 \begin{tabular}[t]{lp{8mm}l}
@@ -45,7 +86,7 @@
 \end{tabular}
 \par 当油液压力$p_0$上升为$p_1$时，阀门开口量为x，则弹簧总压缩量为$x_0$+x,此时阀芯平衡方程式为
 \begin{equation}
-   \frac{\pi}{4}{d_1}^2p_1=K_s(x_0+x)\tag{4-4}
+   \frac{\pi}{4}{d_1}^2p_1=K_s(x_0+x)
 \end{equation}
 \\式中\ 
 \begin{tabular}[t]{lp{8mm}l}
@@ -55,13 +96,13 @@
 \end{tabular}
 \par  若设d $\approx$ $d_1$,将式(4-4)减去式(4-3)得
 \begin{equation}
-   x=\frac{\pi}{4K_s}{d_1}^2(p_1-p_0)\tag{4-5}
+   x=\frac{\pi}{4K_s}{d_1}^2(p_1-p_0)
 \end{equation}
 \qquad 流过阀口缝院的流量可依据下式计算 %空两格
 \begin{equation}
-      Q=C_dA\sqrt{\frac{2}{\rho}\Delta p}=C_d\pi d_1x\sqrt{\frac{2}{\rho}\Delta p}\tag{4-6}
-\end{equation}
-\\式中\ 
+      Q=C_dA\sqrt{\frac{2}{\rho}\Delta p}=C_d\pi d_1x\sqrt{\frac{2}{\rho}\Delta p}
+   \end{equation}
+      \\式中\ 
 \begin{tabular}[t]{lp{8mm}l}
    Q &—— &流过阀口的流量;\\
    A &—— & 滑阀开口后所形成的环形过流面积;\\
@@ -72,16 +113,27 @@
 \par 将式(4-5)代人式(4-6)，可得
 \begin{equation}
    Q=C_d\pi d_1\frac{\pi}{K_s}{d_1}^2(p_1-p_0)\sqrt{\frac{2}{\rho}\Delta p}
-=\frac{C_d\pi^2d_1^3}{4K_s}(p_1-p_0)\sqrt{\frac{2}{\rho}\Delta p}\tag{4-7}  
+=\frac{C_d\pi^2d_1^3}{4K_s}(p_1-p_0)\sqrt{\frac{2}{\rho}\Delta p} 
 \end{equation}
 \par 因为$\Delta p$=$p_1$-$p_2$,溢流阀流出口的压力$p_2$一般都是接通油箱的,可以认为其压力为零，
 所以$\Delta p$=$p_1$,将$\Delta p$=$p_1$代人上式可得
 \begin{equation}
-   Q=\frac{C_d\pi^2d_1^3}{4K_s}\sqrt{\frac{2}{\rho}}(p_1^{\frac{3}{2}}-p_0p_1^\frac{1}{2})\tag{4-8}
+   Q=\frac{C_d\pi^2d_1^3}{4K_s}\sqrt{\frac{2}{\rho}}(p_1^{\frac{3}{2}}-p_0p_1^\frac{1}{2})
 \end{equation}
 \qquad  从式(4-8)中可以看出，流量-压力特性曲线如图4-25所示。
 不同的初始压力,对应着不同的曲线(改变弹簧的预压缩量$x_0$，就可调节初始压力$p_0$的大小)，当$p_0$=0时,$X_0$=0，
 即是曲线1。当$p_0$增加时,则曲线右移为2,3,4。$p_0$越大，曲线离原点越远，溢流阀所控制的压力值p越大。
+
+\begin{figure}
+   \centering
+    \ifOpenSource  
+    \includegraphics[height=4.5cm]{cover.jpg}
+    \else
+   \includegraphics{fig0425.pdf}
+   \fi
+   \caption{溢流阀的流量-压力特性曲线}
+   \label{fig:fig0425}
+   \end{figure}
 
 从图4-23的曲线可看出,直动型溢流阀由于阀芯弹簧刚度较硬,一定的开口量变化对应的压力变化量就比先
 导式溢流阀的压力变化量大，所以先导式溢流阀的流量-
@@ -102,6 +154,18 @@
 (2)动态特性。溢流阀的动态特性通常是指溢流阀由关闭(此时压力为$p_0$)到开启，再关闭的突然变化时，
 溢流阀所控制的压力随时间变化的过渡过程品质。由于阀内流动和受力情况比较复杂，因而动态特性的理论分析就比较困难。
 实践中往往采用计算机仿真和实测的方法来进行分析。实测曲线如图4-26所示。
+
+\begin{figure}
+   \centering
+    \ifOpenSource  
+    \includegraphics[height=4.5cm]{cover.jpg}
+    \else
+   \includegraphics{fig0426.pdf}
+   \fi
+   \caption{溢流阀的压力示波图}
+   \label{fig:fig0426}
+   \end{figure}
+
 
 1)压力超调量$\Delta p$。当压力从$p_0$突然上升到某一调定压力$p_t$时，液压系统将出现最大压力冲击峰值$p_{max}$。
 压力超调量$\Delta p=p_{max}-p_t$要小，否则会发生元件损坏、管道破裂以及使一些以压力
